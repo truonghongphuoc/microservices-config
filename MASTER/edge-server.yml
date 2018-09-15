@@ -22,3 +22,11 @@ zuul:
       path: /card-statement-composite/**
       serviceId: card-statement-composite
       stripPrefix: true
+
+---
+spring:
+  profiles: dev
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
